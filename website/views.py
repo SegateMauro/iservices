@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post
+from .models import Home
 
 
 def home(request):
@@ -8,7 +8,7 @@ def home(request):
         'Banco de Dados', 'Linux', 'Nginex', 'Uwsgi',
         'Systemctl'    
     ]
-    list_posts = Post.objects.all()
+    list_posts = Home.objects.all()
 
     data = {
         'name': 'Curso de Django 3',
