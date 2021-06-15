@@ -1,0 +1,25 @@
+<h1>Home</h1>
+
+{{ name }}
+
+<ol>
+{% for item in lista_tecnologias %}
+
+    {% if item == 'Django' %}
+        <li><b>{{ item }}</b></li>
+    {% else %}
+        <li>{{ item }}</li>
+    {% endif %}
+    
+{% endfor %}
+</ol>
+
+<ul>
+{% for post in posts %}
+    <h2>{{ post.country }}</h2>
+    <h2>{{ post.cep }}</h2>
+    <h2>{{ post.street }}</h2>
+    <h2>{{ post.number }}</h2>
+    <h2>{{ post.complement }}</h2>
+{% endfor %}
+</ul>
